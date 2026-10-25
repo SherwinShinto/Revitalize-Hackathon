@@ -1,0 +1,34 @@
+{#
+  Author: Naren P
+  The one HTML page of the site. JavaScript draws each tab inside <main>.
+#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ brand }} — Your Smart Closet</title>
+
+  {# Every CSS file in static/css, listed by routes/pages/frontend_files.py #}
+  {% for file in css_files %}
+  <link rel="stylesheet" href="{{ url_for('static', filename=file) }}">
+  {% endfor %}
+</head>
+
+<body>
+  <header>
+    <h2>Vital<span>Wear.</span></h2>
+    <span id="username"></span>
+  </header>
+
+  <nav id="nav" hidden></nav>
+
+  <main id="root"></main>
+
+  {# Every JS file in static/js: state and constants first, start.js last #}
+  {% for file in js_files %}
+  <script src="{{ url_for('static', filename=file) }}"></script>
+  {% endfor %}
+</body>
+</html>
