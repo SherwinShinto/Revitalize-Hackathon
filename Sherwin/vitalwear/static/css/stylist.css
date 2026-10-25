@@ -1,0 +1,182 @@
+/*
+ * Author: Sherwin S
+ * The look of the stylist page: weather card, chat bubbles, outfit cards, and swap
+ * buttons.
+ */
+
+/* STYLIST */
+  
+  .stylist-heading {
+    margin-bottom: 24px;
+  }
+  
+  .stylist-layout {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+    gap: 22px;
+    align-items: start;
+  }
+  
+  .stylist-layout .panel {
+    min-width: 0;
+  }
+  
+  .weather-result {
+    margin: 16px 0;
+    overflow-wrap: anywhere;
+  }
+  
+  .weather-card {
+    background: linear-gradient(135deg, #172033, #245a48);
+    color: white;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .weather-big {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 5px 0;
+  }
+  
+  .weather-card p {
+    margin: 5px 0;
+  }
+  
+  .weather-card .small {
+    color: #d1e5df;
+  }
+  
+  .style-chat {
+    background: #f1f5f9;
+    border-radius: 15px;
+    padding: 16px;
+    height: 270px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .assistant-message,
+  .user-message {
+    max-width: 90%;
+    padding: 13px 15px;
+    border-radius: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  .assistant-message {
+    background: white;
+    color: #172033;
+    align-self: flex-start;
+  }
+  
+  .user-message {
+    background: #166534;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .prompt-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .prompt-chips button {
+    background: #e2e8f0;
+    color: #172033;
+    font-size: 13px;
+  }
+  
+  .style-empty {
+    text-align: center;
+    padding: 65px 12px;
+    color: #64748b;
+  }
+  
+  .suggested-outfit {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .outfit-header {
+    background: #f1f5f9;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .outfit-header h3 {
+    margin: 0;
+  }
+  
+  .outfit-header span {
+    color: #15803d;
+    font-size: 12px;
+  }
+  
+  .outfit-breakdown {
+    padding: 12px;
+  }
+  
+  .outfit-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 4px;
+    border-bottom: 1px solid #edf2f7;
+  }
+  
+  .outfit-row:last-child {
+    border-bottom: none;
+  }
+  
+  .outfit-emoji {
+    width: 54px;
+    height: 54px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  .outfit-emoji img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .outfit-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .outfit-info strong {
+    overflow-wrap: anywhere;
+  }
+  
+  .swap-btn {
+    background: #e0f2fe;
+    color: #075985;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  
