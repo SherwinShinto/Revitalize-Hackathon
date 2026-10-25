@@ -1,0 +1,41 @@
+/*
+ * Author: Bazil T
+ * The look of the Keep, Remove, and sell-or-donate buttons on clothing cards.
+ */
+
+/* CLOSET DECISIONS */
+  
+  .closet-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .closet-actions button {
+    padding: 11px 7px;
+    font-size: 13px;
+  }
+  
+  .removal-actions {
+    display: grid;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 15px;
+  }
+  
+  .removal-actions button {
+    width: 100%;
+  }
+  
+  .removal-summary {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: #475569;
+    margin: 15px 0;
+  }
+  
+  
